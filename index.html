@@ -12,40 +12,24 @@
 </head>
 <body>
     <div class="container">
-        <div class="container-content">
-            <div class="text-entry">
-                <h1>Text Text-Analyzer</h1>
-                <textarea rows="7" placeholder="Type here"></textarea>
-                <button type="button" id="process-btn">Process Text</button>
-            </div>
-            <div class="text-info">
-                <h1>Text Analysis</h1>
-                <ul class="text-info-list">
-                    <li>
-                        <p>Character Count:</p>
-                        <span id="Char"></span>
-                    </li>
-                    <li>
-                        <p>Word Count: </p>
-                        <span id="word"></span>
-                    </li>
-                    <li>
-                        <p>Sentences: </p>
-                        <span id="sentence"></span>
-                    </li>
-                    <li>
-                        <p>Spaces</p>
-                        <span id="space"></span>
-                    </li>
-                    <li>
-                        <p>Punctuations</p>
-                        <span id="punctuation"></span>
-                    </li>
-                     
-                </ul>
-            </div>
-        </div>
-    </div>
-    
+        <h2>Text Text-Analyzer</h2>
+        <form id="word-counter">
+            <div class="form-group">
+                <p>Input a text to get a total word count:</p>
+                <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+                <p>Optionally enter a word to count the number of times it occurs in a passage:</p>
+                <input type="text" id="word" name="word" class="form-control">
+                <br>
+                <button type="submit" class="btn btn-success">Submit Process</button>
+                </div>
+        </form>
+        <p>Total Word Count: <span id="total-count"></span></p>
+        <br>
+        <p>Selected Word Count: <span id="selected-count"></span></p>
+        <span id="bolded-passage"></span>
+        <br>
+        <p>Total Sentence: <span id="total-sentence"></span></p>
+        
+       </div>
 </body>
 </html>
