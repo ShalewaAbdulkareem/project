@@ -1,12 +1,5 @@
-function wordCounter(text) {
-    let wordCount =0;
-    if(text.length ===0) {
-        return wordCount;
-    }
-    const wordArray = text.split(" ");
-
-    wordArray.forEach(function(element) {
-        wordCount ++;
-    })
-    return wordCount;
-}
+let charCount = document.getElementById("char");
+ wordCount = document.getElementById("word");
+ sentence = document.getElementById("sentence");
+ space = document.getElementById("space");
+ punctuation = document.getElementById("punctuation");
