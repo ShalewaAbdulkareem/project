@@ -16,4 +16,6 @@ Test: It should return 0 for an empty string.
 Code: wordCounter("");
 Expected Output: 0
 
-Test: It should 
+Test: It should return 0 for strings that has only spaces.
+Code: wordCounter(" ");
+Expected Output: 0
