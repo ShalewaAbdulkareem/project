@@ -50,6 +50,29 @@ const word: "Jane is a genius"
 sentenceCounter(sentence)
 Expected Output: 1
 
+Test: It should be able to return the number o sentence inputted.
+Code:
+const sentence: "My name is Jane. I'm a student".
+sentenceCounter(sentence);
+Expected Output: 2
+
+Test: It should be able to return 0 for an empty string.
+Code:
+const sentence: "";
+setenceCounter(sentence);
+Expected Output: 0;
+
+Test: It should return 0 if only spaces are inputted.
+Code:
+const sentence: "          ";
+sentenceCounter(sentence);
+Expected Output: 0;
+
+Describe: noOfOccurencences()
+
+
+
+
 
  # Application Details
 ### Application Author: [
